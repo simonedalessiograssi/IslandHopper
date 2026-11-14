@@ -7,7 +7,9 @@ stops and how much time.
 ## Data
 
 **Source:** OurAirports, airports dataset (`airports.csv`), available at
-https://ourairports.com/data/. Check the terms of use on the same page.
+https://ourairports.com/data/. Check the terms of use on the same page. 
+
+The dataset does not distinguish civil from military airports, so military bases and skiways in Antarctica are kept in the analysis, as long as they are classified as large or medium, even if not all of them are open to civil aircraft.
 
 
 ## Project structure
