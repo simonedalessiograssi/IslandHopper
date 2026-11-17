@@ -50,6 +50,12 @@ def airports_clean(path= input_file):
 
     return df
 
+def airport_labels(airports):
+    """Return a dict {label: ident}, e.g. 'Milan Malpensa International Airport (MXP)': 'LIMC'."""
+    codes = airports["iata_code"].fillna(airports["ident"])
+    labels = airports["name"] + " (" + codes + ")"
+    return dict(zip(labels, airports["ident"]))
+
 if __name__ == "__main__":
     airports = airports_clean()
     print(airports.shape)
